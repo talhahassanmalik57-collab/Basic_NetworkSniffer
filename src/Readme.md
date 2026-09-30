@@ -1,6 +1,6 @@
-# CodeAlpha Network Sniffer
+# Network Sniffer
 
-A basic, educational command-line network packet analyzer built with Python and Scapy, created for **Task 1: Basic Network Sniffer** of the **CodeAlpha Cybersecurity Internship**.
+A basic, educational command-line network packet analyzer built with Python and Scapy, created for **Basic Network Sniffer**.
 
 The tool captures live traffic from a network interface, identifies the protocol of each packet (TCP, UDP, ICMP, ARP), extracts structured fields (source/destination IP, ports, length), safely previews payloads without assuming they are readable text, and reports summary statistics when capture ends.
 
@@ -81,8 +81,7 @@ Scapy requires [Npcap](https://npcap.com/#download) to capture packets on Window
 ### 2. Set up the project
 
 ```powershell
-git clone https://github.com/<your-username>/CodeAlpha_NetworkSniffer.git
-cd CodeAlpha_NetworkSniffer
+git clone https://github.com/talhahassanmalik57-collab/Basic_NetworkSniffer.git
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 pip install -r requirements.txt
@@ -207,7 +206,7 @@ Documented honestly, based on this project's actual scope and testing:
 - Saving captured packet metadata to a file (CSV/JSON) or standard `.pcap` format
 - TCP stream reassembly for more accurate application-layer content inspection
 - A packet statistics dashboard beyond the terminal summary
-- Rule-based anomaly detection as a foundation for **CodeAlpha Task 4: Network Intrusion Detection System**
+- Rule-based anomaly detection as a foundation for **Network Intrusion Detection System**
 
 ---
 
@@ -236,4 +235,4 @@ Packet Capture -> Network Visibility -> Traffic Analysis ->
 Protocol Understanding -> Security Monitoring -> Intrusion Detection
 ```
 
-The protocol classification, structured field extraction, and statistical baseline built here are the same foundational building blocks a future **Network Intrusion Detection System (CodeAlpha Task 4)** would consume and act on — this project stops at *observing and describing* traffic; an IDS would go further and *judge* it against expected baselines or known attack patterns.
+The protocol classification, structured field extraction, and statistical baseline built here are the same foundational building blocks a future **Network Intrusion Detection System** would consume and act on — this project stops at *observing and describing* traffic; an IDS would go further and *judge* it against expected baselines or known attack patterns.
